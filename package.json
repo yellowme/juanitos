@@ -48,7 +48,7 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
-    "test:coverage": "yarn test -- --coverage",
+    "test:coverage": "yarn test --coverage",
     "eslint": "eslint src/",
     "precommit": "yarn run eslint",
     "prepush": "yarn run eslint && yarn run test:coverage",
