@@ -50,7 +50,8 @@
     "test": "node scripts/test.js --env=jsdom",
     "test:coverage": "npm test -- --coverage",
     "eslint": "eslint src/",
-    "precommit": "npm run eslint"
+    "precommit": "npm run eslint",
+    "prepush": "npm run eslint && npm run test:coverage"
   },
   "jest": {
     "collectCoverageFrom": [
