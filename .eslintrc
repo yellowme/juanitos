@@ -8,6 +8,9 @@
     "plugin:react/recommended"
   ],
   "rules": {
+    "react/default-props-match-prop-types": [
+      "error"
+    ],
     "react/jsx-filename-extension": [
       "error",
       {
@@ -15,6 +18,12 @@
           ".js"
         ]
       }
+    ],
+    "react/require-default-props": [
+      "error"
+    ],
+    "react/sort-prop-types": [
+      "warn"
     ]
   }
 }
