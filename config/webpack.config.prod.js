@@ -90,7 +90,7 @@ module.exports = {
     // for React Native Web.
     extensions: ['.web.js', '.mjs', '.js', '.json', '.web.jsx', '.jsx'],
     alias: {
-      
+
       // Support React Native Web
       // https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
       'react-native': 'react-native-web',
@@ -121,7 +121,7 @@ module.exports = {
             options: {
               formatter: eslintFormatter,
               eslintPath: require.resolve('eslint'),
-              
+
             },
             loader: require.resolve('eslint-loader'),
           },
@@ -149,9 +149,24 @@ module.exports = {
             include: paths.appSrc,
             loader: require.resolve('babel-loader'),
             options: {
-              
+
               compact: true,
             },
+          },
+          {
+            test: /\.scss$/,
+            use: new ExtractTextPlugin({
+              filename: '[name].[contenthash].css',
+              disable: process.env.NODE_ENV === 'development',
+            }).extract({
+              use: [{
+                loader: 'css-loader',
+              }, {
+                loader: 'sass-loader',
+              }],
+              // use style-loader in development
+              fallback: 'style-loader',
+            }),
           },
           // The notation here is somewhat confusing.
           // "postcss" loader applies autoprefixer to our CSS.
