@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.scss';
+import ExampleComponent from './components/ExampleComponent/ExampleComponent';
 
 const App = () => (
   <div className="App">
@@ -11,6 +12,7 @@ const App = () => (
     <p className="App-intro">
             To get started, edit <code>src/App.js</code> and save to reload.
     </p>
+    <ExampleComponent name="juanito" />
   </div>
 );
 
