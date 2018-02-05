@@ -26,6 +26,7 @@
     "file-loader": "1.1.5",
     "fs-extra": "3.0.1",
     "html-webpack-plugin": "2.29.0",
+    "husky": "^0.14.3",
     "jest": "20.0.4",
     "object-assign": "4.1.1",
     "postcss-flexbugs-fixes": "3.2.0",
@@ -47,7 +48,11 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
-    "eslint": "eslint src/"
+    "test:coverage": "yarn test --coverage",
+    "eslint": "eslint src/",
+    "precommit": "yarn run eslint",
+    "prepush": "yarn run eslint && yarn run test:coverage",
+    "postmerge": "yarn install"
   },
   "jest": {
     "collectCoverageFrom": [
