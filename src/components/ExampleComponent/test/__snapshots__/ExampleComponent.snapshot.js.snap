@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ExampleComponent snapshot it renders correctly 1`] = `
+<div
+  className="example-component"
+>
+  <span>
+    Hello juanito
+  </span>
+  <button
+    className="example-component__button"
+    onClick={null}
+  >
+    Pruébame
+  </button>
+</div>
+`;
+
+exports[`ExampleComponent snapshot it renders correctly with onButtonClick prop 1`] = `
+<div
+  className="example-component"
+>
+  <span>
+    Hello juanito
+  </span>
+  <button
+    className="example-component__button"
+    onClick={[Function]}
+  >
+    Pruébame
+  </button>
+</div>
+`;

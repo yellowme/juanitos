@@ -48,3 +48,25 @@ There are some [addons](https://storybook.js.org/addons/addon-gallery/) for stor
 
 Storybook use webpack and if you need to tweak the webpack configuration the file is is `.storybook/webpack.config.js`
 
+
+## Testing
+
+For testing we use [Jest](https://facebook.github.io/jest/) and [Enzyme](http://airbnb.io/enzyme/). If you want to know what can you do with them please go to their docs pages.
+
+Our test files should belong inside the Component directory inside a `test` folder.
+
+The test files are divided in two kinds:
+
+ - snapshot testing:
+    - Our snapshot testing files should follow this pattern:
+        - `ComponentName.snapshot.js`
+    - Remember to store on version control the .snap files generated!
+ - behaviour testing:
+    - Our behaviour test files should follow this pattern:
+        - `ComponentName.snapshot.js`
+
+### Configuration
+
+To tweak the jest configuration just modify the jest options on the package.json. To modify the enzyme behaviour check the configurations on `config/enzyme/*`.
+
+

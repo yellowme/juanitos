@@ -12,7 +12,7 @@ const App = () => (
     <p className="App-intro">
             To get started, edit <code>src/App.js</code> and save to reload.
     </p>
-    <ExampleComponent name="juanito" />
+    <ExampleComponent name="juanito" onButtonClick={() => alert('Wow una alerta')} />
   </div>
 );
 
