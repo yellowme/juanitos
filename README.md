@@ -67,7 +67,7 @@ The test files are divided in two kinds:
     - Remember to store on version control the .snap files generated!
  - behaviour testing:
     - Our behaviour test files should follow this pattern:
-        - `ComponentName.snapshot.js`
+        - `ComponentName.test.js`
 
 ### Configuration
 
