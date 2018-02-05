@@ -1,5 +1,9 @@
 # Hellow
 
+## Before you start...
+
+- Download and install [React WebTools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)
+
 ## USE YARN!
 
 ## Eslint config
