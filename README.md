@@ -1,3 +1,7 @@
+# Hellow
+
+## USE YARN!
+
 ## Eslint config
 
 We use the following configurations, if you need to add or change any rule check their github page.
@@ -69,4 +73,9 @@ The test files are divided in two kinds:
 
 To tweak the jest configuration just modify the jest options on the package.json. To modify the enzyme behaviour check the configurations on `config/enzyme/*`.
 
+## Miscellaneous
+
+### Recommended Libs
+
+- [classnames](https://github.com/JedWatson/classnames): for conditionally rendering classes on components
 
