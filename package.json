@@ -62,7 +62,6 @@
     "test": "node scripts/test.js --env=jsdom",
     "test:coverage": "yarn test --coverage",
     "eslint": "eslint src/",
-    "precommit": "yarn run eslint",
     "prepush": "yarn run eslint && yarn run test:coverage",
     "postmerge": "yarn install",
     "storybook": "start-storybook -p 6006 -c .storybook",
