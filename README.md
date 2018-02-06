@@ -82,4 +82,4 @@ To tweak the jest configuration just modify the jest options on the package.json
 ### Recommended Libs
 
 - [classnames](https://github.com/JedWatson/classnames): for conditionally rendering classes on components
-
+- [React router 4](https://reacttraining.com/react-router/): So your user can move around your application using links and urls.
