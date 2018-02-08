@@ -80,6 +80,10 @@ The test files are divided in two kinds:
 
 To tweak the jest configuration just modify the jest options on the package.json. To modify the enzyme behaviour check the configurations on `config/enzyme/*`.
 
+## Husky
+
+[Husky](https://github.com/typicode/husky) is used to ensure that before doing a push to the remote repository, our project do not have any broken tests and that the code style was followed. If there is any error husky will prevent the push and display the errors on console.
+
 ## Miscellaneous
 
 ### Recommended Libs
