@@ -20,10 +20,13 @@ We use the following configurations, if you need to add or change any rule check
 * Be Mobile first!
 * Please use the [BEM](https://en.bem.info/methodology/quick-start/) Methodology! Or if you have the time learn about [styled components](https://www.styled-components.com) and remove SASS. NO MORE HORRIBLE CSS CRASHES AGAIN!
 
+## Project Structure
+
+* We use this [folder structure](https://medium.com/@alexmngn/how-to-better-organize-your-react-applications-2fd3ea1920f1) to organize our project in scenes, components and services. We are not sure how to handle Redux yet but it will resemble this structure. The idea is that every component have all the things necessary to inside its folder.
 
 ## Storybook
 
-Learn more about [Storybook](https://storybook.js.org/) and why it can be a useful tool during development. Try to use it to debug/create your components.
+Learn more about [Storybook](https://storybook.js.org/) and why it can be a useful tool during development. Try to use it to create/debug your components.
 
 ### Run storybook
 
