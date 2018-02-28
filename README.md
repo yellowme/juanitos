@@ -14,6 +14,30 @@ We use the following configurations, if you need to add or change any rule check
    1. [airbnb code style for js](https://github.com/airbnb/javascript)
 2. [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react)
 
+NOTE: We do not use the airbnb and react styling rules, we only use the eslint rules that that prevent bugs.
+
+## Code styling
+
+For code styling we use [Prettier](https://prettier.io/) and [Lint-staged](https://github.com/okonet/lint-staged)
+
+### Prettier
+ An opinionated automatic styling tool.
+
+### Lint-staged
+Tool used to enforce the styling to all the files staged that will be committed.
+
+### Why use this
+
+The idea behind is that the team do not have to think about (or fight about) the code styling of the project. Instead, prettier will reformat all the code to match the code style.
+
+Please use the [editor integrations](https://prettier.io/docs/en/editors.html) so your code is auto formatted by prettier.
+
+**Use your time to think about the domain, not about styling.**
+
+NOTE: If you want to modify the prettier config check the `.prettierrc` file.
+
+
+
 ## Styling
 
 * We use [SASS](https://sass-lang.com/)
