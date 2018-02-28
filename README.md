@@ -14,7 +14,7 @@ We use the following configurations, if you need to add or change any rule check
    1. [airbnb code style for js](https://github.com/airbnb/javascript)
 2. [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react)
 
-NOTE: We do not use the airbnb and react styling rules, we only use the eslint rules that that prevent bugs.
+NOTE: We do not use the airbnb and react styling rules, we only use the eslint rules that prevent bugs.
 
 ## Code styling
 
