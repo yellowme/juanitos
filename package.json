@@ -75,7 +75,7 @@
     "build-storybook": "build-storybook"
   },
   "lint-staged": {
-    "*.{js,json,scss,md}": ["prettier --write", "git add"]
+    "src/**/*.{js,json,scss,md}": ["prettier --write", "git add"]
   },
   "jest": {
     "collectCoverageFrom": [
