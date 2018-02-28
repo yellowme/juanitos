@@ -4,9 +4,14 @@
     "browser": true,
     "jest": true
   },
+  "plugins": [
+    "prettier"
+  ],
   "extends": [
     "airbnb",
-    "plugin:react/recommended"
+    "plugin:react/recommended",
+    "plugin:prettier/recommended",
+    "prettier/react"
   ],
   "rules": {
     "react/default-props-match-prop-types": [

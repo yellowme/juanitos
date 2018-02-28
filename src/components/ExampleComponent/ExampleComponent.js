@@ -5,18 +5,19 @@ import './ExampleComponent.scss';
 const ExampleComponent = ({ name, onButtonClick }) => (
   <div className="example-component">
     <span>{`Hello ${name}`}</span>
-    <button className="example-component__button" onClick={onButtonClick}>Pruébame</button>
+    <button className="example-component__button" onClick={onButtonClick}>
+      Pruébame
+    </button>
   </div>
 );
 
-
 ExampleComponent.propTypes = {
   name: PropTypes.string.isRequired,
-  onButtonClick: PropTypes.func,
+  onButtonClick: PropTypes.func
 };
 
 ExampleComponent.defaultProps = {
-  onButtonClick: null,
+  onButtonClick: null
 };
 
 export default ExampleComponent;

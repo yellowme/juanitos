@@ -9,7 +9,9 @@ describe('ExampleComponent snapshot', () => {
   });
 
   test('it renders correctly with onButtonClick prop', () => {
-    const wrapper = shallow(<ExampleComponent name="juanito" onButtonClick={() => {}} />);
+    const wrapper = shallow(
+      <ExampleComponent name="juanito" onButtonClick={() => {}} />
+    );
     expect(wrapper).toMatchSnapshot();
   });
 });
