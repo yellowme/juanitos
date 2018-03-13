@@ -39,7 +39,6 @@
     "husky": "^0.14.3",
     "jest": "20.0.4",
     "jsdom": "^11.6.2",
-    "lint-staged": "^7.0.0",
     "node-sass": "^4.7.2",
     "object-assign": "4.1.1",
     "postcss-flexbugs-fixes": "3.2.0",
@@ -63,19 +62,14 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "eslint-check":
-      "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
+    "eslint-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check",
     "test": "node scripts/test.js --env=jsdom",
     "test:coverage": "yarn test --coverage",
     "eslint": "eslint src/",
     "prepush": "yarn run eslint && yarn run test:coverage",
-    "precommit": "lint-staged",
     "postmerge": "yarn install",
     "storybook": "start-storybook -p 6006 -c .storybook",
     "build-storybook": "build-storybook"
-  },
-  "lint-staged": {
-    "src/**/*.{js,json,scss,md}": ["prettier --write", "git add"]
   },
   "jest": {
     "collectCoverageFrom": [
@@ -87,7 +81,9 @@
       "<rootDir>/config/enzyme/adapterConfig.js",
       "<rootDir>/config/enzyme/jsdomConfig.js"
     ],
-    "snapshotSerializers": ["enzyme-to-json/serializer"],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
     "testMatch": [
       "<rootDir>/src/**/__tests__/**/*.{js,jsx,mjs}",
       "<rootDir>/src/**/?(*.)(spec|test|snapshot).{js,jsx,mjs}"
@@ -97,10 +93,11 @@
     "transform": {
       "^.+\\.(js|jsx|mjs)$": "<rootDir>/node_modules/babel-jest",
       "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
-      "^(?!.*\\.(js|jsx|mjs|css|json)$)":
-        "<rootDir>/config/jest/fileTransform.js"
+      "^(?!.*\\.(js|jsx|mjs|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
     },
-    "transformIgnorePatterns": ["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs)$"],
+    "transformIgnorePatterns": [
+      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs)$"
+    ],
     "moduleNameMapper": {
       "^react-native$": "react-native-web"
     },
@@ -115,6 +112,8 @@
     ]
   },
   "babel": {
-    "presets": ["react-app"]
+    "presets": [
+      "react-app"
+    ]
   }
 }
