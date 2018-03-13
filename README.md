@@ -23,9 +23,6 @@ For code styling we use [Prettier](https://prettier.io/) and [Lint-staged](https
 ### Prettier
  An opinionated automatic styling tool.
 
-### Lint-staged
-Tool used to enforce the styling to all the files staged that will be committed.
-
 ### Why use this
 
 The idea behind is that the team do not have to think about (or fight about) the code styling of the project. Instead, prettier will reformat all the code to match the code style.
