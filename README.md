@@ -1,5 +1,13 @@
 # Hellow
 
+## Motivation
+
+1. Many templates out there contains a lot of stuff that might not be useful for our needs.
+2. Along with the magic, many templates also come with a lot of boilerplate code.
+3. Cause we are on 2018, use *yarn* bro! 
+4. We need to improve the folder structure in our projects.
+5. We need to increase our completion rate.
+
 ## Before you start...
 
 - Download and install [React WebTools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)
