@@ -98,11 +98,3 @@ To tweak the jest configuration just modify the jest options on the package.json
 
 - [classnames](https://github.com/JedWatson/classnames): for conditionally rendering classes on components
 - [React router 4](https://reacttraining.com/react-router/): So your user can move around your application using links and urls.
-
-## TODO
-
-* [ ] How can we handle modal pages, it should have their own URL? How trello accomplish this?
-* [ ] How can we integrate Redux? Shold we use a new folder container for it? There is another approach in order to keep modularity?
-* [ ] Consider "yeoman" generators or CLI to facilitate the life of the developer
-* [ ] Review our React Router implementation and version use.
-
