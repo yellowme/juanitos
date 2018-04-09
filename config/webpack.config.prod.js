@@ -153,21 +153,6 @@ module.exports = {
               compact: true,
             },
           },
-          {
-            test: /\.scss$/,
-            use: new ExtractTextPlugin({
-              filename: '[name].[contenthash].css',
-              disable: process.env.NODE_ENV === 'development',
-            }).extract({
-              use: [{
-                loader: 'css-loader',
-              }, {
-                loader: 'sass-loader',
-              }],
-              // use style-loader in development
-              fallback: 'style-loader',
-            }),
-          },
           // The notation here is somewhat confusing.
           // "postcss" loader applies autoprefixer to our CSS.
           // "css" loader resolves paths in CSS and adds assets as dependencies.
@@ -181,7 +166,7 @@ module.exports = {
           // use the "style" loader inside the async code so CSS from them won't be
           // in the main CSS file.
           {
-            test: /\.css$/,
+            test: /\.(scss|css)$/,
             loader: ExtractTextPlugin.extract(
               Object.assign(
                 {
@@ -219,6 +204,9 @@ module.exports = {
                           }),
                         ],
                       },
+                    },
+                    {
+                      loader: 'sass-loader',
                     },
                   ],
                 },
